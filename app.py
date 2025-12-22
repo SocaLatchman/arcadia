@@ -12,7 +12,7 @@ csrf_token = CSRFProtect(app)
 
 @app.route('/')
 def index():
-    pass
+    return render_template('index.html')
 
 @app.route('/about')
 def about():
