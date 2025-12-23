@@ -24,7 +24,7 @@ def offerings():
 
 @app.route('/community')
 def community():
-    pass
+    return render_template('community.html', title='Community')
 
 @app.route('/subscribe')
 def subscribe():
