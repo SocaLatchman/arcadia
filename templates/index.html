@@ -2,13 +2,21 @@
 {% block content %}
 <main>
     <div id="content">
-       <h1>Nostalgia and futurist gaming merge<span class="special_char">_</span></h1>
-       <p>
-           Step into a world where classic arcade charm meets cutting-edge gaming technology. 
-           From beloved pinball classics to immersive VR experiences, Arcadia is your portal to 
-           gaming paradise
-       </p>
-       <button type="button" id="join-button">Join us</button>
+       <div class="video-container">
+          <div class="overlay"></div> 
+          <video autoplay loop muted playsinline webkit-playsinline disablePictureInPicture   preload="metadata" poster="poster.jpg">
+            <source src="{{ url_for('static', filename='images/pixel_bkgd.webm')}}" type="video/webm">
+            <source src="{{ url_for('static', filename='images/pixel_bkgd_3840x2160.mp4')}}" type="video/mp4">
+             Your browser does not support the video tag
+          </video>
+        <div class="neon-card">
+            <h1>Nostalgia and futurist gaming merge<span class="special_char">_</span></h1>
+            <p>Step into a world where classic arcade charm meets cutting-edge gaming technology.</p> 
+            <p>From beloved pinball classics to immersive VR experiences, Arcadia is your portal to 
+                gaming paradise</p>
+            <button type="button" id="join-button">Join us</button>
+        </div>
+       </div> 
     </div>
 </main>
 {% endblock %}

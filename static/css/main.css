@@ -1,0 +1,346 @@
+* {
+padding: 0;
+margin: 0;   
+}
+
+html {
+box-sizing: border-box;   
+}
+
+body {
+background: #000;   
+}
+
+:root {
+--neon-pink: #FC2FA7;
+--pink-text: #FC7EC7;
+--highlight-pixel-blue: rgb(11, 147, 188, 0.2);
+--text-field-blue: rgb(217, 217, 217, 0.35);
+--blue-bkgd: #97E7FF;
+}
+
+header {
+display: flex;
+flex-direction: row;
+justify-content: space-between;
+padding: 25px 15px;
+}
+
+header h2 {
+font: normal 2.4em "Pixelify Sans", sans-serif;
+color: var(--neon-pink);
+}
+
+.video-container {
+position: relative;
+width: 100%;
+padding-bottom: 55%; 
+height: 0;
+overflow: hidden !important;
+display: flex;
+justify-content: center;
+align-items: center;
+margin-bottom: 25px;
+}
+
+.overlay {
+position: absolute;    
+top: 0;
+left: 0;
+width: 100%;
+height: 100%;
+overflow: hidden !important;
+background:rgba(96, 42, 146, 0.8);
+}
+
+.video-container video {
+position: absolute;
+width: 100%;
+height: auto;
+min-width: 100%;
+min-height: 100%;
+overflow: hidden !important;
+top: 50%;
+left: 50%;
+transform: translate(-50%, -50%);    
+z-index: -1;
+}
+
+.neon-card {
+width: 70%;
+height: auto;
+max-width: 640px;
+border: 2px solid var(--neon-pink);
+border-radius: 24px;  
+padding: 50px;
+position: absolute;
+top: 20%;
+}
+
+.neon-card h1 {
+font: normal 900 2em "Pixelify Sans", sans-serif;   
+color: var(--pink-text);
+margin-bottom: 15px;
+text-align: center;
+}
+
+.neon-card p {
+background: var(--highlight-pixel-blue);   
+font: normal 400 0.8em "Quantico", sans-serif;  
+color: var(--pink-text);  
+line-height: 2em;
+text-align: justify;
+margin: 0 auto 8px auto;
+width: 95%;
+}
+
+.neon-card p:last-of-type {
+margin-bottom: 35px;   
+}
+
+.neon-card button {
+display: block;   
+margin: 0 auto;  
+width: 50%;
+height: 60px; 
+cursor: pointer;
+border: 2px solid var(--neon-pink);
+border-radius: 15px;
+background-color: transparent;
+color: var(--neon-pink);
+font: normal 1.2em "Pixelify Sans", sans-serif;   
+}
+
+footer {       
+background: var(--blue-bkgd);
+font: normal 300 1em "Pixelify Sans", sans-serif;
+}
+
+.footer-content {    
+display: flex;
+flex-direction: row;
+justify-content: space-around;   
+}
+
+footer .bottom-content {
+margin-top: 35px;    
+border-top: 2px dashed #000;
+}
+
+footer h1 a {
+font: normal 4em "Pixelify Sans", sans-serif;
+color: var(--neon-pink);
+text-decoration: none;
+}
+
+footer h3 {
+margin: 10px 0; 
+}
+
+footer ul li {
+list-style-type: none;
+margin: 5px 0;
+}
+
+footer ul li a {
+color: #000;
+text-decoration: none;
+}
+
+footer p {
+text-align: center;
+padding: 15px 0;
+}
+
+.location,  .subscription, .social {
+width: 40%;
+margin: 0; 
+padding: 25px;
+border-right: 2px dashed #000;
+}
+
+.subscription div {
+border: 1px solid #000;
+border-radius: 10px;
+background: var(--text-field-blue); 
+width: 100%; 
+max-width: 600px;
+}
+
+.subscription input[type='email']::placeholder {
+color: #000;
+font: normal 1.3em "Pixelify Sans", sans-serif;
+}
+
+.subscription input[type='email'] {
+width: 65%;
+height: 40px;
+margin: 10px;
+background: transparent;
+border: none;
+outline: transparent;
+color: #000;
+font: normal 400 0.8em "Quantico", sans-serif; 
+}
+
+.subscription input[type='submit'] {
+width: 25%;
+height: 45px;
+border: 1px solid #000;
+border-radius: 10px;
+cursor: pointer;
+background-color: transparent;
+font: 900 normal 1.2em "Pixelify Sans", sans-serif;
+float: right;
+margin: 7px 10px 0 0;
+}
+
+
+
+
+@media(max-width:640px){
+
+.video-container {
+padding-bottom: 65%; 
+height: 0;
+}
+
+.overlay {  
+top: 15px;
+width: 100%;
+height: 100vh;
+}
+
+.neon-card {
+height: 230px; 
+padding: 30px;
+top: 10%;
+}
+
+.neon-card h1 {
+font: normal 900 1em "Pixelify Sans", sans-serif;   
+color: var(--pink-text);
+margin: 15px 0;
+text-align: center;
+}
+
+.neon-card p {
+line-height: 1.8em;
+margin: 0 auto 3px auto;
+}
+
+
+footer {       
+font: normal 300 1.1em "Pixelify Sans", sans-serif;
+}
+
+.footer-content {    
+display: block;  
+}
+
+.location,  .subscription, .social {
+width: 85%;
+margin: 0 auto; 
+padding: 25px 0;
+border: none;
+}
+
+.bottom-content {
+border: none !important;    
+}
+
+
+}
+
+
+@media screen and (min-width:640px) and (max-width: 1100px){
+
+.video-container {
+padding-bottom: 55%; 
+height: 0;
+}
+
+.overlay {  
+top: 0px;
+width: 100%;
+height: 100vh;
+}
+
+.neon-card {
+height: 230px; 
+padding: 30px;
+top: 15%;
+}
+
+.neon-card h1 {
+font-size: 1.4em;
+margin: 15px 0;
+}
+
+.neon-card p {
+line-height: 1.8em;
+margin: 0 auto 3px auto;
+}
+
+footer {    
+font: normal 300 1em "Pixelify Sans", sans-serif;
+}
+
+.footer-content {    
+display: block;  
+}
+
+.location,  .subscription, .social {
+width: 85%;
+margin: 0 auto; 
+padding: 25px 0;
+border: none;
+}
+
+.bottom-content {
+border: none !important;    
+}
+
+
+}
+
+
+@media screen and (min-width:1100px) and (max-width: 2300px){
+
+.video-container {
+padding-bottom: 45%; 
+height: 0;
+}
+
+.neon-card {
+width: 70%;
+height: auto;
+max-width: 700px;
+border: 2px solid var(--neon-pink);
+border-radius: 24px;  
+padding: 50px;
+position: absolute;
+top: 20%;
+}
+
+.neon-card h1 {
+font: normal 900 2em "Pixelify Sans", sans-serif;   
+color: var(--pink-text);
+margin-bottom: 15px;
+text-align: center;
+}
+
+.neon-card p {
+background: var(--highlight-pixel-blue);   
+font: normal 400 1em "Quantico", sans-serif;  
+color: var(--pink-text);  
+line-height: 2em;
+text-align: justify;
+margin: 0 auto 8px auto;
+width: 95%;
+}
+
+
+
+}
+
