@@ -12,15 +12,15 @@ csrf_token = CSRFProtect(app)
 
 @app.route('/', methods=['GET', 'POST'])
 def index():
-    return render_template('index.html')
+    return render_template('index.html', title='Welcome to Arcadia')
 
 @app.route('/about')
 def about():
-    return render_template('about.html')
+    return render_template('about.html', title='About')
 
 @app.route('/offerings')
 def offerings():
-    pass
+    return render_template('offerings.html', title='Offerings')
 
 @app.route('/community')
 def community():
