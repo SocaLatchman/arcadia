@@ -1,0 +1,35 @@
+  <footer>
+    <div class="location">
+      <h3>Location and hours</h3>
+      <ul>
+        <li>S 123 Gaming street</li>
+        <li>Metropolis, St 12345</li>
+        <li>Open Daily: 10 AM - 12 AM</li>
+        <li>Extended hours on weekends</li>
+      </ul>
+    </div>
+    <div class="subscription">
+      <h3>Subscribe for updates</h3>
+      <div>
+        <form method="POST">
+          <input type="hidden" name="csrf_token" value="{{ csrf_token() }}">
+          <input type="email" name="email" placeholder="E-mail here" id="email">
+          <input type="submit" id="submit" value="submit">
+        </form>
+      </div>
+    </div>
+    <div class="social">
+      <h3>Social media/Contact us</h3>
+        <ul>
+         <li><a href="">Discord</a></li>
+         <li><a href="">Twitter</a></li>
+         <li><a href="">play@arcadiagaming.com</a></li>
+        </ul>
+    </div>
+    <div>
+       <p>All rights reserved</p> 
+       <h1><a href="{{ url_for('index')}}">Arcadia_</a></h1>
+    </div>
+  </footer>
+  </body>
+</html> 
