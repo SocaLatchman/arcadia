@@ -16,7 +16,7 @@ def index():
 
 @app.route('/about')
 def about():
-    pass
+    return render_template('about.html')
 
 @app.route('/offerings')
 def offerings():
