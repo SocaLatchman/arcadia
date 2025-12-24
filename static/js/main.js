@@ -18,7 +18,6 @@ function loadMenu() {
     closeMenu();
 }
 
-
 function closeMenu(){
   const closeButton = document.querySelector('#close-button');
   const sidePanel = document.querySelector('#side-panel');
@@ -33,6 +32,9 @@ function closeMenu(){
        });
   })
 }
+
+
+
 
 
 loadMenu();

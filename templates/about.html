@@ -1,15 +1,21 @@
 {% extends 'base.html' %}
 {% block content %}
-<main>
-  <h2>About<span class="special_char">_</span></h2>
-  <p>
-    We've created the ultimate gaming sanctuary. Our two-story entertainment hub 
-    seamlessly blends the nostalgic charm of traditional arcades with state-of-the-art
-    gaming innovations. Whether you're a retro enthusiast or a virtual reality explorer, 
-    there's something here for every type of player.  
-  </p>
-  <div class="testimonials">
+<main id="about">
+  <section>
+  <div class="overlay"></div> 
+    <div class="neon-card">
+      <h1>About<span class="special_char">_</span></h1>
+      <p>
+        We've created the ultimate gaming sanctuary. Our two-story entertainment hub 
+        seamlessly blends the nostalgic charm of traditional arcades with state-of-the-art
+        gaming innovations. Whether you're a retro enthusiast or a virtual reality explorer, 
+        there's something here for every type of player.  
+      </p>
+    </div>
+  </section>
+  <section>
      <h3>What are people saying about Arcadia?</h3>
+     <div class="testimonials">
      <div class="comment">
        <p>
           Weekly smash tourney at Arcadia was PACKED tonight! 
@@ -58,5 +64,6 @@
        </div>
      </div>
   </div>
+  </section>
 </main>
 {% endblock %}

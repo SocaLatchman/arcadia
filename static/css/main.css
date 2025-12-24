@@ -43,7 +43,7 @@ align-items: center;
 margin-bottom: 25px;
 }
 
-.overlay {
+.video-container .overlay {
 position: absolute;    
 top: 0;
 left: 0;
@@ -66,7 +66,7 @@ transform: translate(-50%, -50%);
 z-index: -1;
 }
 
-.neon-card {
+#home.neon-card {
 width: 70%;
 height: auto;
 max-width: 640px;
@@ -77,10 +77,10 @@ position: absolute;
 top: 20%;
 }
 
+
 .neon-card h1 {
 font: normal 900 2em "Pixelify Sans", sans-serif;   
 color: var(--pink-text);
-margin-bottom: 15px;
 text-align: center;
 }
 
@@ -241,7 +241,116 @@ text-decoration: none;
 background: rgb(11, 147, 188, 0.15);
 }
 
+main {
+width: 100%;
+height: auto;
+}
 
+/* About */
+
+#about {
+background: url('../images/ben-neale-zpxKdH_xNSI-unsplash.png') no-repeat;    
+width: 100%;
+height: 100vh;
+background-size: cover;
+}
+
+#about .neon-card {
+left: 30%;  
+}
+
+#about .overlay {
+position: absolute;    
+top: 110px;
+left: 0;
+width: 100%;
+height: 100%;
+overflow: hidden !important;
+background:rgba(96, 42, 146, 0.8);
+}
+
+section:last-of-type {
+width: 100%;
+height: 350px;
+background: #0E2139;
+position: relative;
+top: 710px;
+}
+
+section:last-of-type h3 {
+font: 600 normal 2em "Quantico", sans-serif;
+color: var(--neon-pink);
+text-align: center;
+padding: 35px 0;
+}
+
+.testimonials {
+display: flex;
+flex-direction: row;    
+justify-content: space-evenly;
+}
+
+.testimonials .comment {
+width: 30%;
+border-right: 2px dashed rgb(151, 231, 255, 0.7);
+padding: 0 25px;
+}
+
+.testimonials .comment:last-of-type {
+border-right: none;
+}
+
+
+.testimonials .comment p {
+font: 200 normal 1.1em "Pixelify Sans", sans-serif;
+letter-spacing: 1px;
+line-height: 1.6em;
+color: #fafafa;
+}
+
+.testimonials .comment p:first-of-type {
+margin-bottom: 15px;
+height: 85px;
+}
+
+.testimonials .user-profile {
+display: flex;
+flex-direction: row;
+justify-content: baseline;
+}
+
+.testimonials .user-profile p:first-of-type {
+height: auto;
+line-height: 0;
+margin: 8px 0 0 10px;
+}
+
+.testimonials .user-profile p {
+margin: 8px 0 0 10px;
+}
+
+.testimonials .user-profile img {
+border-radius: 10px;
+}
+
+
+/******/
+
+
+
+/* Offerings */
+
+
+
+/******/
+
+
+
+/* Community */
+
+
+
+/******/
 
 @media(max-width:640px){
 
