@@ -6,9 +6,11 @@
        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
        <link href="https://fonts.googleapis.com/css2?family=Pixelify+Sans:wght@400..700&family=Quantico:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
        <link href="{{ url_for('static', filename='css/main.css')}}" rel="stylesheet">
-       <script src="{{ url_for('static', filename='js/main.js')}}"></script>
+       <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.13.0/all.min.js" integrity="sha512-fxASHhXi6WjjUR9Hr8qt2IxNW2AzyZOpoPi4+UgVU0lTFNKMQ8INkZaQ5ZED2aAldHuHNaLlaHuwQ1oGT+LHhw==" crossorigin="anonymous" referrerpolicy="no-referrer" defer></script>
+       <script src="{{ url_for('static', filename='js/main.js')}}" defer></script>
     </head>
     <body>
-       {% include 'partials/header.html' %} 
+       {% include 'partials/header.html' %}
+       {% include 'partials/menu.html' %} 
        {% block content %}{% endblock %}
        {% include 'partials/footer.html' %}

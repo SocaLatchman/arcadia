@@ -195,6 +195,51 @@ float: right;
 margin: 7px 10px 0 0;
 }
 
+#side-panel {
+position: fixed;
+top: 0;
+right: 0;
+width: 100%;
+height: 100vh;
+background: var(--neon-pink) ;   
+transform: translateX(100%);
+transition: transform 0.5s ease-out;
+z-index: 9 !important;
+}
+
+#side-panel.is-active {
+transform: translateX(0);    
+}
+
+#side-panel button {
+font: 900 normal 9em "Pixelify Sans", sans-serif;
+color: #000;
+float: right;
+cursor: pointer;
+background: transparent;
+border: none;
+}
+
+#side-panel menu {
+margin-top: 175px;
+}
+
+#side-panel menu li {
+display: block;
+width: 100%;
+list-style-type: none;
+padding: 15px 0;
+}
+
+#side-panel menu li a {
+font: 900 normal 9em "Pixelify Sans", sans-serif;
+color: #000;
+text-decoration: none;
+}
+
+#side-panel menu li:hover {
+background: rgb(11, 147, 188, 0.15);
+}
 
 
 
