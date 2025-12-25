@@ -1,6 +1,9 @@
 {% extends 'base.html' %}
 {% block content %}
-<main>
+<main id="community">
+  <section>
+   <div class="overlay"></div> 
+   <div class="card-container">
    <h2>Community<span class="special_char">_</span></h2>
    <div class="neon-card">
      <h3>Join our thriving gaming community!</h3>
@@ -12,13 +15,27 @@
        <li>Release day celebrations</li> 
        <li>Retro gaming nights</li> 
      </ul>
+   </div>
+    <div class="neon-card">
+     <h3>Membership_</h3>
+     <h4>Flexible gaming packages to suit every player:</h4>
+     <ul>
+       <li>Hourly rates</li> 
+       <li>Day passes</li> 
+       <li>Social events</li> 
+       <li>Weekly and monthly memberships</li> 
+       <li>Special group rates</li> 
+       <li>Birthday party packages</li> 
+     </ul>
+   </div>
+   </div>
      <div class="gallery">
        <ul>
-         <li><img src="{{ url_for('static', filename='images/side-view-happy-woman-winning-videogame 1.png')}}" alt="" width="285" height="260"></li>
-         <li><img src="{{ url_for('static', filename='images/Untitled-1.png')}}" alt="" width="285" height="260"></li>
-         <li><img src="{{ url_for('static', filename='images/Untitled-12.jpg')}}" alt="" width="285" height="260"></li>
+         <li><img src="{{ url_for('static', filename='images/side-view-happy-woman-winning-videogame 1.png')}}" alt="" width="285" height="240"></li>
+         <li><img src="{{ url_for('static', filename='images/Untitled-1.png')}}" alt="" width="285" height="240"></li>
+         <li><img src="{{ url_for('static', filename='images/Untitled-12.jpg')}}" alt="" width="285" height="240"></li>
        </ul>
      </div>
-   </div>
+   </section>
 </main>
 {% endblock %}
