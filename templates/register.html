@@ -1,0 +1,28 @@
+{% extends 'base.html' %}
+{% block content %}
+<main id="registration">
+  <div class="">
+    <div class="left-content">
+        <h3>Membership perks</h3>
+        <div class="neon-card">
+           <h4></h4>
+           <ul>
+             <li>Extreme gaming package ($50/mth) - Unlimited usage of available gaming stations, priority private room booking and birthday perks</li>
+             <li>Family package ($100/mth) - Same as Extreme Gaming package but for a family</li>
+             <li>Veteran package ($35/mth) - If you are a veteran you can enjoy the Extreme Gaming package at this special discpunt</li>
+             <li>Level 1 package ($25/mth) - With this basic package, you get Extreme Gaming package perks twice a month as slots are available</li>
+           </ul>
+        </div>
+    </div>
+    <div class="right-content">
+       <h3>Sign up</h3>
+       <form method="POST">
+          <input type="hidden" name="csrf_token" value="{{ csrf_token() }}">
+          <input type="text" name="fullname" placeholder="Fullname">
+          <input type="email" name="email" placeholder="E-mail">
+          <input type="submit" name="submit" value="Submit">
+       </form>
+    </div>
+  </div>
+</main>
+{% endblock %}

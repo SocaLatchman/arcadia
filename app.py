@@ -26,6 +26,11 @@ def offerings():
 def community():
     return render_template('community.html', title='Community')
 
+@app.route('/register')
+def register():
+    return render_template('register.html', title='Join the community')
+
+
 @app.route('/subscribe')
 def subscribe():
     pass

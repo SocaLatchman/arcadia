@@ -14,7 +14,7 @@ background: #000;
 :root {
 --neon-pink: rgb(252, 47, 167);
 --pink-text: #FC7EC7;
---highlight-pixel-blue: rgb(11, 147, 188, 0.2);
+--highlight-pixel-blue: rgba(11, 147, 188, 0.2);
 --text-field-blue: rgb(217, 217, 217, 0.35);
 --blue-bkgd: #97E7FF;
 }
@@ -70,14 +70,15 @@ transform: translate(-50%, -50%);
 z-index: -1;
 }
 
-#home.neon-card {
+#home .neon-card {
 width: 70%;
 height: auto;
 max-width: 640px;
+background: rgba(0,0,0,0.4);
 border: 2px solid var(--neon-pink);
 border-radius: 24px;  
-padding: 50px;
-position: relative;
+padding: 50px 75px;
+position: absolute;
 top: 20%;
 animation: pulsatingFrame 1.5s linear infinite alternate forwards;
 }
@@ -88,7 +89,7 @@ color: #97E7FF;
 text-align: center;
 }
 
-.neon-card p {
+#home .neon-card p {
 background: var(--highlight-pixel-blue);   
 font: normal 400 0.8em "Quantico", sans-serif;  
 color: var(--pink-text);  
@@ -98,17 +99,17 @@ margin: 0 auto 8px auto;
 width: 95%;
 }
 
-.neon-card p:last-of-type {
+#home .neon-card p:last-of-type {
 margin-bottom: 35px;   
 }
 
 .neon-card button {
 display: block;   
 margin: 0 auto;  
-width: 50%;
+width: 35%;
 height: 60px; 
 cursor: pointer;
-border: 2px solid var(--neon-pink);
+border: 3px solid var(--neon-pink);
 border-radius: 15px;
 background-color: transparent;
 color: var(--neon-pink);
@@ -277,7 +278,9 @@ margin: 0 auto;
 }  
 
 #about .neon-card {
-left: 30%;  
+left: 30%;
+top: 275px;  
+background: rgba(0,0,0,0.4);
 animation: pulsatingFrame 1.5s linear infinite alternate forwards;
 }
 
@@ -519,27 +522,24 @@ width: 250px;
 display: flex;
 flex-direction: row;
 justify-content: space-evenly;
-width: 100%;
-}
-
-.gallery {
 position: relative;
 background-color: #1D0E30;
 width: 100%;
 height: auto;
-padding: 75px 0;
+padding: 45px 0 65px 0;
 top: 25px;
 }
 
 .gallery ul li {
 display: inline;
-padding-right: 25px;
+padding-right: 35px;
 list-style-type: none;
 }
 
 
 .gallery ul li img {
 border-radius: 15px;
+border: 2px solid var(--neon-pink);
 }
 
 
