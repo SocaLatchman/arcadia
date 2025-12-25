@@ -28,7 +28,11 @@ padding: 25px 15px;
 
 header h2 {
 font: normal 2.4em "Pixelify Sans", sans-serif;
+}
+
+header h2 a {
 color: var(--neon-pink);
+text-decoration: none;
 }
 
 .video-container {
@@ -409,18 +413,6 @@ margin-left: -30px;
 }
 
 
-@keyframes pulsatingFrame {
-    0% {
-      box-shadow: none;
-    }
-
-    100% {
-      box-shadow: 2px 2px 20px rgb(252, 47, 167);
-    }
-}
-
-
-
 
 /******/
 
@@ -519,6 +511,19 @@ list-style-type: none;
 .gallery ul li img {
 border-radius: 15px;
 }
+
+
+@keyframes pulsatingFrame {
+    0% {
+      box-shadow: none;
+    }
+
+    100% {
+      box-shadow: 2px 2px 20px rgb(252, 47, 167);
+    }
+}
+
+
 
 /******/
 
